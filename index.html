@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=1280, initial-scale=1.0" />
+    <title>United Works Pte. Ltd.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            'xs': '475px',
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1536px',
+          },
+          extend: {
+            colors: {
+              'uw-orange': '#E97522',
+              'uw-dark': '#1A1A1A',
+              'uw-grey-1': '#555555',
+              'uw-grey-2': '#F5F5F5',
+              'uw-grey-3': '#D9D9D9',
+              'uw-footer-bg': '#1A1A1A',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+            },
+            animation: {
+              'push-in': 'push-in 0.5s ease-out forwards',
+            },
+            keyframes: {
+              'push-in': {
+                '0%': { opacity: 0, transform: 'translateX(30px)' },
+                '100%': { opacity: 1, transform: 'translateX(0)' },
+              },
+            },
+            spacing: {
+              '18': '4.5rem',
+              '88': '22rem',
+              '128': '32rem',
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react-router-dom": "https://esm.sh/react-router-dom@6",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
